@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Pipbloom: ADHD habit tracker</title>
+<meta name="description" content="Fill in your year, one tap a day. A habit tracker for ADHD brains: a missed day never resets anything, and nothing you have tracked is ever locked.">
+<meta property="og:title" content="Pipbloom: ADHD habit tracker">
+<meta property="og:description" content="Fill in your year, one tap a day.">
+<meta property="og:image" content="og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --paper: #F6F2EA; --paper-raised: #FFFDF8; --ink: #1F1B16; --ink-2: #5E574D; --ink-3: #857D71; --hairline: #E3DDD2;
+    --l0: #E9E4DA; --l1: #BDD9B4; --l2: #92BC83; --l3: #699E56; --l4: #45802E;
+    --pad: 16px; --measure: 34rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #161412; --paper-raised: #211E1B; --ink: #F2EDE4; --ink-2: #ABA398; --ink-3: #837B70; --hairline: #2E2A26;
+      --l0: #2A2622; --l1: #384F30; --l2: #4E7540; --l3: #6AA058; --l4: #90CE7B;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 400 1.0625rem/1.55 ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 48px var(--pad) 64px; }
+  .wordmark { font-weight: 600; letter-spacing: .01em; color: var(--ink-2); margin: 0 0 40px; }
+  h1 { font-weight: 600; font-size: clamp(2.1rem, 7vw, 3.1rem); line-height: 1.08; margin: 0 0 20px; max-width: 14em; }
+  .lede { max-width: var(--measure); color: var(--ink-2); margin: 0 0 12px; }
+  .facts { max-width: var(--measure); color: var(--ink-3); font-size: .9375rem; margin: 0 0 32px; }
+  figure { margin: 0 0 36px; }
+  figure svg { display: block; width: 100%; max-width: 34rem; height: auto; }
+  figcaption { color: var(--ink-3); font-size: .875rem; margin-top: 12px; max-width: var(--measure); }
+  .l0 { fill: var(--l0); } .l1 { fill: var(--l1); } .l2 { fill: var(--l2); } .l3 { fill: var(--l3); } .l4 { fill: var(--l4); }
+  .dot { fill: var(--ink-3); opacity: .55; }
+  .today { fill: none; stroke: var(--ink); stroke-width: 1; }
+  .cta {
+    display: inline-block; background: var(--ink); color: var(--paper); font: inherit; font-weight: 600;
+    padding: 14px 24px; border-radius: 12px; text-decoration: none; min-height: 44px;
+  }
+  .cta:hover { opacity: .9; }
+  .cta:focus-visible { outline: 3px solid var(--l3); outline-offset: 3px; }
+  .after { color: var(--ink-3); font-size: .9375rem; margin: 14px 0 0; max-width: var(--measure); }
+</style>
+</head>
+<body>
+<main>
+  <p class="wordmark">Pipbloom</p>
+  <h1>Fill in your year, one tap a day.</h1>
+  <p class="lede">Pipbloom is a habit tracker for ADHD brains. One tap logs your day, a missed day never resets anything, and nothing you have already tracked is ever locked.</p>
+  <p class="facts">Free for up to 5 trackers. Coming to iPhone in early 2027.</p>
+
+  <figure>
+{{GRID}}
+    <figcaption>Your year as it fills in. Squares are days you showed up, dots are days still ahead.</figcaption>
+  </figure>
+
+  <a class="cta" href="https://tally.so/r/PRpNxP">Join the waitlist</a>
+  <p class="after">Get the TestFlight beta and a note on launch day. Your email is used only to tell you about Pipbloom.</p>
+</main>
+</body>
+</html>
